@@ -22,6 +22,16 @@ def agregar():
     else:
         lista.insert(indice,elemento);
         print ("Elemento agregado");
+def eliminar():
+    print ("Ingrese el índice del elemento que desea eliminar");
+    indice = int(input());
+    longitud = int(len(lista));
+    if (indice > longitud or indice < 0):
+        print ("El indice debe de estar entre o y ", longitud-1);
+    else:
+        del lista[indice];
+        print ("Elemento eliminado");        
 capturar();
 mostrar();
 agregar();
+eliminar();
