@@ -8,4 +8,8 @@ def capturar():
         print("Ingresa el elemento del índice ", i);
         elemento = input();
         lista.insert(i,elemento);
+def mostrar():
+    lista_ordenada = sorted(lista);
+    print(lista_ordenada);        
 capturar();
+mostrar();
