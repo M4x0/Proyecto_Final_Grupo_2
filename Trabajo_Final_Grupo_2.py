@@ -11,5 +11,17 @@ def capturar():
 def mostrar():
     lista_ordenada = sorted(lista);
     print(lista_ordenada);        
+def agregar():
+    print("Ingrese el elemento que desea agregar");
+    elemento = input();
+    print ("Ingrese el índice donde desea agregarlo");
+    indice = int(input());
+    longitud = int(len(lista));
+    if (indice > longitud) or (indice < 0):
+        print ("El indice debe de estar entre o y ", longitud);
+    else:
+        lista.insert(indice,elemento);
+        print ("Elemento agregado");
 capturar();
 mostrar();
+agregar();
