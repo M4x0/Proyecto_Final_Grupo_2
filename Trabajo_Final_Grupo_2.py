@@ -45,9 +45,13 @@ def modificar():
 def mayor():
     mayor = max(lista);
     print ("El elemento mayor es: ", mayor);
+def menor():
+    menor = min(lista);
+    print ("El elemento menor es: ", menor);
 capturar();
 mostrar();
 agregar();
 eliminar();
 modificar();
 mayor();
+menor();
