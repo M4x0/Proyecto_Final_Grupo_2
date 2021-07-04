@@ -31,7 +31,19 @@ def eliminar():
     else:
         del lista[indice];
         print ("Elemento eliminado");        
+def modificar():
+    print ("Ingrese el índice del elemento que desea modificar");
+    indice = int(input());
+    print ("Ingrese el nuevo valor del elemento");
+    elemento = input();
+    longitud = int(len(lista));
+    if (indice > longitud or indice < 0):
+        print ("El indice debe de estar entre o y ", longitud-1);
+    else:
+        lista[indice] = elemento;
+        print ("Elemento modificado");
 capturar();
 mostrar();
 agregar();
 eliminar();
+modificar();
