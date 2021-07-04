@@ -42,8 +42,12 @@ def modificar():
     else:
         lista[indice] = elemento;
         print ("Elemento modificado");
+def mayor():
+    mayor = max(lista);
+    print ("El elemento mayor es: ", mayor);
 capturar();
 mostrar();
 agregar();
 eliminar();
 modificar();
+mayor();
