@@ -48,10 +48,39 @@ def mayor():
 def menor():
     menor = min(lista);
     print ("El elemento menor es: ", menor);
-capturar();
-mostrar();
-agregar();
-eliminar();
-modificar();
-mayor();
-menor();
+def principal():
+    opcion = "1";
+    print ("  MANIPULACIÓN DE UNA LISTA  ");
+    print ("="*30);
+    while (opcion != "8"):
+        print ("¿Qué deseas hacer?");
+        print ("1) Capturar lista");
+        print ("2) Mostrar lista");
+        print ("3) Mostrar el elemento mayor");
+        print ("4) Mostrar el elemento menor");
+        print ("5) Agregar un elemento a la lista");
+        print ("6) Eliminar un elemento de la lista");
+        print ("7) Modificar un elemento de la lista");
+        print ("8) Salir");
+        opcion = input();
+        #Evaluando el valor de opción:
+        if (opcion == "1"):
+            capturar();
+        elif (opcion == "2"):
+            mostrar();
+        elif (opcion == "3"):
+            mayor();
+        elif (opcion == "4"):
+            menor();
+        elif (opcion == "5"):
+            agregar();
+        elif (opcion == "6"):
+            eliminar();
+        elif (opcion == "7"):
+            modificar();
+        elif (opcion == "8"):
+            print ("Saliendo...");
+            print ("¡PROGRAMA TERMINADO!");
+        else:
+            print ("¡Opción incorrecta!");
+principal();
